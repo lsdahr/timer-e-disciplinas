@@ -1,0 +1,30 @@
+<div class="container-fluid">
+  <h1 class="h3 text-center mt-3 mb-5">HOME</h1>
+Aluno: Luis Fernando Soares da Hora da Silva<br>
+RA: 0050831911023<br><br>
+  <a href="https://github.com/lsdahr" target="_blank">GitHub - Luis Hora</a>
+  <br><br>
+
+
+  <label for="periodo" class="form-label">
+    <b>INFORMAR TIMER</b>
+  </label>
+  <input
+    type="number"
+    class="form-control mb-3"
+    id="exampleFormControlInput1"
+    [(ngModel)]="tempo"
+  />
+  <div class="text-center">
+    <button
+      (click)="timer.start(tempo * 1000)"
+      type="button"
+      class="btn btn-warning mx-2"
+    >
+      Iniciar
+    </button>
+    <button (click)="timer.stop()" type="button" class="btn btn-warning">
+      Parar
+    </button>
+  </div>
+</div>
